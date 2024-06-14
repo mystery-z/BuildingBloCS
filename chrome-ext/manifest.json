@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "tools to make reading online a better experience for dyslexic people",
   "manifest_version": 3,
-  "permissions": ["scripting", "activeTab", "tabs"],
+  "permissions": ["scripting", "activeTab", "tabs", "storage"],
   "author": "Juwon, Rinta and Chris",
   "action": {
     "default_title": "Dyslexia tool",
@@ -12,8 +12,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["js/script.js"],
-      "css": ["css/styles.css"]
+      "js": ["js/script.js"]
     }
   ],
   "web_accessible_resources": [
